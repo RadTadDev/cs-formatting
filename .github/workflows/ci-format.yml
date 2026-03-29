@@ -9,7 +9,7 @@ jobs:
   format:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/checkout@v4.2.0
+      - uses: actions/setup-dotnet@v4.2.0
       - run: dotnet tool install csharpier --version ${{ inputs.csharpier-version }}
       - run: dotnet csharpier --check .
